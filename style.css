@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #000;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    padding: 0 28px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+nav a, .drop-down {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 35px;
+    color: #fff;
+    z-index: 1;
+}
+
+.drop-down {
+    position: absolute;
+    align-items: center;
+    padding: 0.5rem ;
+    margin-top: 190px;
+    background: linear-gradient(60deg, #4f1919, #ff3333);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px #ff3e3e;
+    font-size: 12px;
+}
+
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 8px;
+    transition: .5s ease 0.15s;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 133px;
+    width: 110px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 245px;
+    width: 100px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 340px;
+    width: 85px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 420px;
+    width: 80px;
+}
+
+nav a:nth-child(6):hover~span {
+    left: 490px;
+    width: 110px;
+}
+
+
